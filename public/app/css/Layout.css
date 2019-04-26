@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+div.container{
+    background-color: rgba(0, 2, 1, 0.44);
+    width:98%;
+    height:98%;
+    padding:1%;
+    position:absolute;
+}
+.headerdiv{
+    background-color: rgba(0, 0, 0, 0.24);
+    width:100%;
+    height:10%;
+    position:relative;
+    margin-top:1%;
+    padding: 1%;
+    overflow: auto;
+}
+.canvas{
+    width:69%;
+    height:88%;
+    margin-top:1%;
+    position:relative;
+    float:left;
+}
+
+.viewPort{
+    width:100%;
+    height:100%;
+    position:relative;
+    border: 1px solid black;
+}
+
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.24);
+    width:30%;
+    margin-top:1%;
+    float:right;
+    height:88%;
+    position:relative;
+}
+
+.controlWrapper{
+    border:dashed;
+    text-align: left;
+    display: inline-block;
+    float:left;
+    min-width:1.25%;
+    height:2%;
+    position:absolute;
+}
+.controls
+{
+    border:dashed;
+    text-align: left;
+    display:inline-block;
+    float:left;
+}
+
+.sideInner{
+    border:dashed;
+    text-align: left;
+    display: inline-block;
+}
+
+.sideControls{
+    border:dashed;
+    text-align: left;
+    display:inline-block;
+}
+
+.btn, .btn-primary, .dropdown-toggle{
+    width:100%;
+    position:relative;
+    background-color: darkgrey;
+    border-color: black;
+}
+

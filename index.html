@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Style sheets -->
+    <link href='http://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css'>
+    <!-- Scripts -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <style type="text/css"> @import url('/css/Layout.css');</style>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/thirdparties/three.js"></script>
+    <script src="js/thirdparties/OBJLoader.js"></script>
+    <script src="js/thirdparties/OBJExporter.js"></script>
+
+    <script type="text/javascript" src="js/utilities/scene.js"></script>
+    <script type="text/javascript" src="js/utilities/model.js"></script>
+    <script type="text/javascript" src="js/utilities/ip.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="/js/frontend/ngShapeMenu.js"></script>
+    <script src="/js/frontend/ngCanvas.js"></script>
+    <script>angular.module('rootApp',['canApp','myapp'])</script>
+
+    <title> Three.js Based 3d Modeller </title>
+</head>
+<body onload="initViewPort()" ng-app="rootApp">
+
+<div class="container">
+    <div class="headerdiv">
+        <div class="page-header">
+        </div>
+
+    </div>
+    <div class="canvas" ng-controller="canAppController" ng-include="Url.url">
+    </div>
+
+    <div class="menu"  ng-controller="ngClickcontrol">
+        <ng-clickshape></ng-clickshape>
+    </div>
+
+</div>
+<!--div class="ctrlBar">
+    <input type="button" id="cube" value="Insert Cube" onclick="createCube()"/>
+    <input type="button" id="sphere" value="Insert Spehre" onclick="createSphere()"/>
+    <input type="button" id="cylinder" value="Insert cylinder" onclick="createCylinder()"/>
+    <input type="button" id="cone" value="Insert cone" onclick="createCone()"/>
+</div-->
+</body>
+</html>

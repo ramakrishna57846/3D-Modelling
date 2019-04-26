@@ -1,0 +1,38 @@
+body {
+    margin: 0px auto;
+    font-size: 12px;
+    font-family: Salsa
+}
+.viewPort {
+    position: fixed;
+    top:6%;
+    left:3%;
+    width: 94%;
+    height: 87%;
+    border: 1px solid black;
+}
+
+.statusBar {
+	position: fixed;
+	top: 3%;
+	left: 3%;
+	width: 93.8%;
+	height: 2.6%;
+	border: 1px solid black;
+	padding: 0.1%;
+	text-align: right;
+}
+
+.statusItem {
+	width: 33%;
+}
+
+.ctrlBar {
+	position: fixed;
+	top: 93%;
+	left: 3%;
+	width: 93.8%;
+	height: 5.6%;
+	border: 1px solid black;
+	padding: 0.1%;
+}

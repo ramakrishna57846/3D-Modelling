@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+div.container{
+    background-color: rgba(0, 2, 1, 0.44);
+    width:100%;
+    height:100%;
+    padding:1%;
+    position:absolute;
+}
+.registerdiv{
+    background-color: white;
+    width:48%;
+    height:70%;
+    position:relative;
+    margin-top:1%;
+    padding: 1%;
+    overflow: auto;
+    float:left;
+}
+
+.logindiv{
+    background-color: white;
+    width:48%;
+    height:70%;
+    position:relative;
+    margin-top:1%;
+    padding: 1%;
+
+    overflow: auto;
+}
